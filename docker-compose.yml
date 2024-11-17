@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: nest-api-notes
+    ports:
+      - 5433:5432
+    environment:
+      POSTGRES_DB: nest-api-notes
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12345678
